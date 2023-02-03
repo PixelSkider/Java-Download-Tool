@@ -1,33 +1,33 @@
 package client;
 
+import download.multi;
+import download.single;
+import judgment.test;
+
 import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
-import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
-import static client.download.down.Dio;
-import static client.info.info.Print;
-import static java.awt.Color.black;
+import static info.print.Print;
 import static java.awt.Color.lightGray;
-
 
 public class client {
     public static String url;
     public static String path;
+    private static int status;
     public static boolean downboolean;
     public static String inPath = "输入下载地址！";
-    public static int status;
     public static String io;
-
-
-    public static void main(String[] args) {
+    private single s = new single();
+    private test t = new test();
+    private multi m = new multi();
+    public void main() {
         JFrame jFrame = new JFrame("Hi,I am a JFrame");
         jFrame.setSize(550,400);
         jFrame.setVisible(true);
@@ -110,11 +110,11 @@ public class client {
                 }else if (a2.isSelected()){
                     io = "http://";
                 }else if (a3.isSelected()) {
-                    io = null;
+                    io = "";
                 }
                 url = io + JTextFieldURL.getText();
                 try {
-                    testURL(url);
+                    t.testURL(url);
                 } catch (Exception ex) {
                     status = 404;
                     Print("网址链接错误！");
@@ -129,22 +129,19 @@ public class client {
                         Print("开始下载...");
                         JLabelPrint.setText("开始下载...");
                         try {
-                            Dio(url,path);
-                            closetest(path);
+                            if (c1.isSelected()){
+                                s.main(url,path);
+                                JLabelPrint.setText("下载完成！");
+                                JLabelPrint.setText("用时" + s.getBeginTime() + "秒");
+                            }else if (c2.isSelected()){
+                                m.main(url,path);
+                                JLabelPrint.setText("下载完成");
+                                JLabelPrint.setText("用时" + m.getBeginTime() + "秒");
+                            }else if (c3.isSelected()){
+                                JLabelPrint.setText("操你妈你爱下不下不下滚");
+                            }
                         } catch (MalformedURLException ex) {
                             JLabelPrint.setText("网络链接错误！");
-                            try {
-                                closetest(path);
-                            } catch (IOException exc) {
-                                exc.printStackTrace();
-                            }
-                            ex.printStackTrace();
-                        } catch (IOException ex) {
-                            try {
-                                closetest(path);
-                            } catch (IOException exc) {
-                                exc.printStackTrace();
-                            }
                             ex.printStackTrace();
                         }
                     }else {
@@ -155,7 +152,6 @@ public class client {
                     Print("网址输入为空！");
                     JLabelPrint.setText("网址输入为空！");
                 }
-                Print(url);
             }
 
         });
@@ -168,7 +164,7 @@ public class client {
                 if (path != null){
                     if (path != inPath){
                         try {
-                            testPath(path);
+                            t.testPath(path);
                             Print("地址测试成功！");
                             JLabelPrint.setText("地址测试成功!");
                         }catch (IOException ee){
@@ -200,7 +196,6 @@ public class client {
                 result = fileChooser.showOpenDialog(jFrame);
                 if (JFileChooser.APPROVE_OPTION == result) {
                     path=fileChooser.getSelectedFile().getPath();
-                    Print("路径:" + path);
                     JTextFieldPath.setText(path);
                 }
             }
@@ -219,49 +214,6 @@ public class client {
         jPanel.add(JButtonSave);
         jPanel.add(JButtonFastSave);
         jFrame.add(jPanel);
-    }
-
-    private static void testURL(String url)throws Exception{
-        try {
-            URL test = new URL(url);
-            HttpURLConnection oc = (HttpURLConnection)test.openConnection();
-            oc.setAllowUserInteraction(false);
-            oc.setConnectTimeout(3000);
-            status = oc.getResponseCode();
-        }catch (Exception e) {
-            status = 404;
-
-            e.printStackTrace();
-            throw e;
-        }
-    }
-
-    private static void testPath(String path)throws IOException{
-        try {
-            File file = new File(path,"test");
-            if (!file.exists()){
-                file.createNewFile();
-            }else {
-                Print("文件测试成功！");
-            }
-        }catch (Exception e) {
-            throw new IOException();
-        }
-
-    }
-
-    private static void closetest(String path)throws IOException {
-        File file = new File(path,"test");
-        try {
-            if (!file.exists()){
-                file.delete();
-            }else {
-                return;
-            }
-        }catch (Exception e) {
-            e.printStackTrace();
-        }
-
     }
 
 
