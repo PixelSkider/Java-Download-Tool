@@ -1,128 +1,136 @@
 package client;
 
 import com.sun.awt.AWTUtilities;
+import date.date;
 import download.multi;
 import download.single;
-import info.others;
-import judgment.test;
+import info.info;
+import settings.setting;
+import utils.color;
+import utils.file;
+import utils.image;
 
-import javax.annotation.Resource;
 import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.geom.RoundRectangle2D;
-import java.io.File;
-import java.io.IOException;
-import java.net.MalformedURLException;
-import java.net.UnknownHostException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Date;
-import java.util.concurrent.TimeUnit;
+import java.io.*;
 
-import static info.print.Print;
-import static java.awt.Color.lightGray;
-
-public class client {
-    public static String url;
-    public static String path;
+public class client extends JFrame{
+    public static String url,path,io;
     private static int status;
     public static String inPath = " Pressdown Path";
     public static String inURL = " Pressdown URL";
-    public static String io;
-    private static Color back = new Color(35,38,46);
-    private int use = 1;
-    private int esu;
-    private single s = new single();
-    private test t = new test();
-    private multi m = new multi();
-    private others o = new others();
-    public void main() {
-        ImageIcon title = new ImageIcon("src\\resource\\Title.png");
-        ImageIcon download = new ImageIcon("src\\resource\\Download.png");
+    public static Boolean moon = true;
+    single single = new single();
+    file file = new file();
+    multi multi = new multi();
+    date date = new date();
+    utils.color color = new color();
+    utils.image image = new image();
 
-        Font font = new Font("宋体",Font.BOLD,15);
-
-        JFrame jFrame = new JFrame("Hi,I am a JFrame");
-        jFrame.setSize(750,450);
-        jFrame.setUndecorated(true);
-        jFrame.setVisible(true);
-        jFrame.setLocationRelativeTo(null);
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.getContentPane().setBackground(back);
-        jFrame.setResizable(false);
-        AWTUtilities.setWindowShape(jFrame, new RoundRectangle2D.Double(
-                0.0D, 0.0D, jFrame.getWidth(), jFrame.getHeight(), 30,
+    public client() throws IOException {
+        this.setTitle("Hi,I am a JFrame");
+        this.setSize(750,450);
+        this.setUndecorated(true);
+        this.setVisible(true);
+        this.setLocationRelativeTo(null);
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.getContentPane().setBackground(color.getColor(moon));
+        this.setResizable(false);
+        AWTUtilities.setWindowShape(this, new RoundRectangle2D.Double(
+                0.0D, 0.0D, this.getWidth(), this.getHeight(), 30,
                 30));
+        swing();
+    }
+
+    public void swing() throws IOException {
+        Font font = new Font("宋体",Font.BOLD,15);
+        moon = readAll("Moon");
 
         JPanel jPanel = new JPanel();
         jPanel.setLayout(null);
-        jPanel.setBackground(back);
+        jPanel.setBackground(color.getColor(moon));
 
         JTextField JTextFieldURL = new JTextField(inURL);
+        JTextFieldURL.setText(read("URL"));
         JTextFieldURL.setText("down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe");
-        JTextFieldURL.setForeground(Color.gray);
-        JTextFieldURL.setCaretColor(Color.black);
+        JTextFieldURL.setForeground(color.getFontColor(moon));
+        JTextFieldURL.setBackground(color.getColor(moon));
+        JTextFieldURL.setCaretColor(color.getCaretColor(moon));
         JTextFieldURL.setFont(font);
-        JTextFieldURL.setBackground(back);
         JTextFieldURL.setSize(300,50);
         JTextFieldURL.setLocation((750 - 300) / 2,(450 - 50) / 2 - 60);
 
         JTextField JTextFieldPath = new JTextField(inPath);
-        JTextFieldPath.setForeground(Color.gray);
-        JTextFieldPath.setCaretColor(Color.black);
+        JTextFieldPath.setText(read("Path"));
+        JTextFieldPath.setForeground(color.getFontColor(moon));
+        JTextFieldPath.setBackground(color.getColor(moon));
+        JTextFieldPath.setCaretColor(color.getCaretColor(moon));
         JTextFieldPath.setFont(font);
-        JTextFieldPath.setBackground(back);
         JTextFieldPath.setSize(300,50);
         JTextFieldPath.setLocation((750 - 300) / 2,(450 - 50) / 2 );
 
         JButton JButtonDownload = new JButton("Download");
-        JButtonDownload.setForeground(Color.WHITE);
+        JButtonDownload.setForeground(color.getFontColor(moon));
+        JButtonDownload.setBackground(color.getColor(moon));
         JButtonDownload.setFont(font);
-        JButtonDownload.setBackground(back);
         JButtonDownload.setSize(145,50);
         JButtonDownload.setLocation((750 - 300) / 2,(450 - 50) / 2 + 55);
 
         JButton JButtonSave = new JButton("Save");
-        JButtonSave.setForeground(Color.WHITE);
+        JButtonSave.setForeground(color.getFontColor(moon));
+        JButtonSave.setBackground(color.getColor(moon));
         JButtonSave.setFont(font);
-        JButtonSave.setBackground(back);
         JButtonSave.setSize(145,50);
         JButtonSave.setLocation((750 - 300) / 2 + 155,(450 - 50) / 2 + 55);
 
         JButton JButtonInfo = new JButton("Info");
-        JButtonInfo.setForeground(Color.WHITE);
+        JButtonInfo.setForeground(color.getFontColor(moon));
+        JButtonInfo.setBackground(color.getColor(moon));
         JButtonInfo.setFont(font);
-        JButtonInfo.setBackground(back);
         JButtonInfo.setSize(145,50);
         JButtonInfo.setLocation((750 - 300) / 2,(450 - 50) / 2 + 110);
 
+        JButton JButtonMoon = new JButton();
+        JButtonMoon.setFont(font);
+        JButtonMoon.setIcon(image.getIcon(moon));
+        JButtonMoon.setBackground(color.getColor(moon));
+        JButtonMoon.setSize(50,50);
+        JButtonMoon.setLocation(7,7);
+        JButtonMoon.setFocusPainted(false);
+        JButtonMoon.setBorderPainted(false);
+
         JButton JButtonFastSave = new JButton("...");
-        JButtonFastSave.setForeground(Color.WHITE);
+        JButtonFastSave.setForeground(color.getFontColor(moon));
+        JButtonFastSave.setBackground(color.getColor(moon));
         JButtonFastSave.setFont(font);
-        JButtonFastSave.setBackground(back);
         JButtonFastSave.setSize(145,50);
         JButtonFastSave.setLocation((750 - 300) / 2 + 155,(450 - 50) / 2 + 110);
 
         JButton JButtonSettings = new JButton("Settings");
-        JButtonSettings.setForeground(Color.WHITE);
+        JButtonSettings.setForeground(color.getFontColor(moon));
+        JButtonSettings.setBackground(color.getColor(moon));
         JButtonSettings.setFont(font);
-        JButtonSettings.setBackground(back);
         JButtonSettings.setSize(300,50);
         JButtonSettings.setLocation((750 - 300) / 2,(450 - 50) / 2 + 165);
 
-        JLabel JLabelTtile = new JLabel(title);
+        JLabel JLabelTtile = new JLabel();
+        JLabelTtile.setIcon(image.getLogo(moon));
         JLabelTtile.setSize(114,54);
         JLabelTtile.setLocation((750 - 114) / 2,30);
-
-
 
         JButtonSettings.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                settings();
+                setting setting = new setting();
+                try {
+                    date.Print("设置...");
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
             }
 
         });
@@ -132,8 +140,8 @@ public class client {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    o.main();
-                } catch (UnknownHostException ex) {
+                    info info = new info();
+                } catch (IOException ex) {
                     ex.printStackTrace();
                 }
             }
@@ -143,42 +151,56 @@ public class client {
         JButtonDownload.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if (use == 0){
+                if (settings.setting.getUse() == 0){
                     io = "HTTPS://";
-                }else if (use == 1){
+                }else if (settings.setting.getUse() == 1) {
                     io = "HTTP://";
-                }else if (use == 2){
-                    io = "";
                 }
                 url = io + JTextFieldURL.getText();
                 try {
-                    t.testURL(url);
+                    file.testURL(url);
                 } catch (Exception ex) {
                     status = 404;
-                    Print("网址链接错误！");
+                    try {
+                        date.Print("网址链接错误！");
+                        date.Print("网址链接错误！");
+                    } catch (IOException exc) {
+                        exc.printStackTrace();
+                    }
                     throw new RuntimeException(ex);
                 }
 
                 if (url != null){
                     if (status != 404){
-                        Print("网址链接成功！");
-                        Print("开始下载...");
                         try {
-                            if (esu == 0){
-                                s.main(url,path);
-                            }else if (esu == 1){
-                                m.main(url,path);
-                            }else if (esu == 3){
+                            date.Print("网址链接成功！");
+                            date.Print("开始下载...");
+                            if (settings.setting.getEsu() == 0){
+                                single.main(url,path);
+                                saveconfig(url,path,moon);
+                            } else if (settings.setting.getEsu() == 1){
+                                multi.main(url,path);
+                                saveconfig(url,path,moon);
+                            }else if (settings.setting.getEsu() == 3){
+                                saveconfig(url,path,moon);
                                 return;
                             }
-                        } catch (MalformedURLException ex) {
+                        } catch (IOException ex) {
                             ex.printStackTrace();
                         }
                     }else {
-                        Print("网址链接失败！");
+                        try {
+                            date.Print("网址链接失败！");
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                 }else {
-                    Print("网址输入为空！");
+                    try {
+                        date.Print("网址输入为空！");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                 }
             }
 
@@ -192,16 +214,32 @@ public class client {
                 if (path != null){
                     if (path != inPath){
                         try {
-                            t.testPath(path);
-                            Print("地址测试成功！");
+                            client.this.file.testPath(path);
+                            url = JTextFieldURL.getText();
+                            saveconfig(url,path,moon);
                         }catch (IOException ee){
-                            Print("地址测试失败！");
+
+                            ee.printStackTrace();
+                            try {
+                                date.Print("地址测试失败！");
+                            } catch (IOException ex) {
+                                ex.printStackTrace();
+                            }
                         }
                     }else {
-                        Print("地址输入错误！");
+                        try {
+                            date.Print("地址输入错误！");
+                        } catch (IOException ex) {
+                            ex.printStackTrace();
+                        }
                     }
                 }else {
-                    Print("地址输入为空！");
+
+                    try {
+                        date.Print("地址输入为空！");
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
 
                 }
             }
@@ -217,11 +255,48 @@ public class client {
                 fileChooser.setDialogTitle("请选择要保存地址");
                 fileChooser.setApproveButtonText("确定");
                 fileChooser.setFileSelectionMode(JFileChooser.DIRECTORIES_ONLY);
-                result = fileChooser.showOpenDialog(jFrame);
+                result = fileChooser.showOpenDialog(client.this);
                 if (JFileChooser.APPROVE_OPTION == result) {
                     path=fileChooser.getSelectedFile().getPath();
                     JTextFieldPath.setText(path);
+                    try {
+                        date.Print("选择路径...");
+                        date.Print("选择成功");
+                        date.Print("Path:" + path);
+                    } catch (IOException ex) {
+                        ex.printStackTrace();
+                    }
                 }
+            }
+        });
+
+        JButtonMoon.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                moon = !moon;
+                color.setMoon(moon);
+                JTextFieldURL.setForeground(color.getFontColor(moon));
+                JTextFieldURL.setBackground(color.getColor(moon));
+                JTextFieldURL.setCaretColor(color.getCaretColor(moon));
+                JButtonSettings.setForeground(color.getFontColor(moon));
+                JButtonSettings.setBackground(color.getColor(moon));
+                JTextFieldPath.setForeground(color.getFontColor(moon));
+                JTextFieldPath.setBackground(color.getColor(moon));
+                JTextFieldPath.setCaretColor(color.getCaretColor(moon));
+                JButtonDownload.setForeground(color.getFontColor(moon));
+                JButtonDownload.setBackground(color.getColor(moon));
+                JButtonSave.setForeground(color.getFontColor(moon));
+                JButtonSave.setBackground(color.getColor(moon));
+                JButtonInfo.setForeground(color.getFontColor(moon));
+                JButtonInfo.setBackground(color.getColor(moon));
+                JButtonMoon.setIcon(image.getIcon(moon));
+                JButtonMoon.setBackground(color.getColor(moon));
+                JButtonFastSave.setForeground(color.getFontColor(moon));
+                JButtonFastSave.setBackground(color.getColor(moon));
+                JLabelTtile.setIcon(image.getLogo(moon));
+                jPanel.setBackground(color.getColor(moon));
+                paint();
             }
         });
 
@@ -230,90 +305,31 @@ public class client {
         jPanel.add(JButtonSave);
         jPanel.add(JButtonSettings);
         jPanel.add(JButtonFastSave);
+        jPanel.add(JButtonMoon);
         jPanel.add(JButtonDownload);
         jPanel.add(JButtonInfo);
         jPanel.add(JLabelTtile);
-        jFrame.add(jPanel);
+        this.add(jPanel);
     }
 
-    public void settings(){
-        Font font = new Font("宋体",Font.BOLD,15);
-        JFrame settings = new JFrame("settings");
-        settings.setSize(350,75);
-        settings.setUndecorated(true);
-        settings.setVisible(true);
-        settings.setLocationRelativeTo(null);
-        settings.getContentPane().setBackground(back);
-        settings.setResizable(false);
 
-        JPanel jPanel = new JPanel();
-        jPanel.setLayout(null);
-        jPanel.setBackground(back);
-
-        JButton JButtonBack = new JButton("Back");
-        JButtonBack.setForeground(Color.BLACK);
-        JButtonBack.setFont(font);
-        JButtonBack.setBackground(back);
-        JButtonBack.setSize(145,75);
-        JButtonBack.setLocation(205,0);
-
-        JRadioButton c1 = new JRadioButton("单线程",true);
-        c1.setLocation(5,0);
-        c1.setSize(100,25);
-        JRadioButton c2 = new JRadioButton("多线程");
-        c2.setLocation(5,25);
-        c2.setSize(100,25);
-        JRadioButton c3 = new JRadioButton("Null");
-        c3.setLocation(5,50);
-        c3.setSize(100,25);
-        ButtonGroup c4 = new ButtonGroup();
-        c4.add(c1);
-        c4.add(c2);
-        c4.add(c3);
-
-        JRadioButton a1 = new JRadioButton("HTTPS",true);
-        a1.setLocation(105,0);
-        a1.setSize(100,25);
-        JRadioButton a2 = new JRadioButton("HTTP");
-        a2.setLocation(105,25);
-        a2.setSize(100,25);
-        JRadioButton a3 = new JRadioButton("Null");
-        a3.setLocation(105,50);
-        a3.setSize(100,25);
-        ButtonGroup a4 = new ButtonGroup();
-        a4.add(a1);
-        a4.add(a2);
-        a4.add(a3);
-
-        JButtonBack.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                if (a1.isSelected()){
-                    use = 0;
-                }else if (a2.isSelected()) {
-                    use = 1;
-                }else if (a3.isSelected()){
-                    use = 2;
-                }
-                if (c1.isSelected()){
-                    esu = 0;
-                }else if (c2.isSelected()){
-                    esu = 1;
-                }else if (c3.isSelected()){
-                    esu = 2;
-                }
-                settings.setVisible(false);
-            }
-
-        });
-
-        jPanel.add(a1);
-        jPanel.add(a2);
-        jPanel.add(a3);
-        jPanel.add(c1);
-        jPanel.add(c2);
-        jPanel.add(c3);
-        jPanel.add(JButtonBack);
-        settings.add(jPanel);
+    private void saveconfig(String url,String path,Boolean moon) throws IOException {
+        utils.info ii = new utils.info(url,path,moon);
+        ii.saveConfig();
     }
+
+    private String read(String text) throws IOException {
+        utils.info info = new utils.info();
+       return info.read(text);
+    }
+
+    private Boolean readAll(String text) throws IOException {
+        utils.info info = new utils.info();
+        return info.readAll(text);
+    }
+
+    private void paint(){
+        this.repaint();
+    }
+
 }

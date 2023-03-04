@@ -1,26 +1,28 @@
 package download;
 
+
+
+import date.date;
+
 import java.io.*;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.Date;
-
-import static info.print.Print;
 
 public class single {
     private String filename;
     private String fileext;
     private int length;
     private long beginTime;
-    public void main(String downloadurl, String path) throws MalformedURLException {
+    private date date = new date();
+    public void main(String downloadurl, String path) throws IOException {
         File urlFile = new File(downloadurl);
         this.filename = urlFile.getName();
         this.fileext = filename.substring(filename.lastIndexOf(".") + 1).toUpperCase();
         URL fileurl = new URL(downloadurl);
         File saveFile = new File(path,filename);
-        Print("文件大小:" + length / 1024 / 1024 + "MB");
         try {
+            date.Print("文件大小:" + length / 1024 / 1024 + "MB");
             long begin_time = new Date().getTime();
             HttpURLConnection conn = (HttpURLConnection)fileurl.openConnection();
             OutputStream out = new FileOutputStream(saveFile);
@@ -44,11 +46,11 @@ public class single {
             long end_time = new Date().getTime();
             long seconds = (end_time - begin_time) / 1000;
             beginTime = seconds % 60;
-            Print("下载完成！");
-            Print("用时" + beginTime + "秒");
+            date.Print("下载完成！");
+            date.Print("用时" + beginTime + "秒");
         } catch (FileNotFoundException e) {
             beginTime = (System.currentTimeMillis() - beginTime / 1000);
-            Print("用时" + beginTime + "秒");
+            date.Print("用时" + beginTime + "秒");
             e.printStackTrace();
         }catch (IOException e){
             e.printStackTrace();

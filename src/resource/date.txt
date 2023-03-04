@@ -1,0 +1,256 @@
+[2023:1:56:55:56] 设置...
+[2023:1:56:56:1] 设置...
+[2023:1:56:56:4] 设置...
+[2023:1:56:56:15] 设置...
+[2023:1:56:56:18] 设置...
+[2023:1:56:56:46] URL载入成功！
+[2023:1:56:56:46] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:56:46] Path载入成功！
+[2023:1:56:56:46] Path:D:\桌面
+[2023:1:56:57:10] URL载入成功！
+[2023:1:56:57:10] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:57:10] Path载入成功！
+[2023:1:56:57:10] Path:D:\桌面
+[2023:1:56:57:27] 设置...
+[2023:1:56:57:29] 设置...
+[2023:1:56:57:36] 设置...
+[2023:1:56:58:2] URL载入成功！
+[2023:1:56:58:2] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:58:2] Path载入成功！
+[2023:1:56:58:2] Path:D:\桌面
+[2023:1:56:58:7] 设置...
+[2023:1:56:58:10] 设置...
+[2023:1:56:58:54] URL载入成功！
+[2023:1:56:58:54] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:58:55] Path载入成功！
+[2023:1:56:58:55] Path:D:\桌面
+[2023:1:56:59:5] 设置...
+[2023:1:56:59:7] 设置...
+[2023:1:56:0:5] URL载入成功！
+[2023:1:56:0:5] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:0:5] Path载入成功！
+[2023:1:56:0:5] Path:D:\桌面
+[2023:1:56:0:9] 设置...
+[2023:1:56:0:12] 设置...
+[2023:1:56:0:14] 设置...
+[2023:1:56:0:20] 设置...
+[2023:1:56:0:49] URL载入成功！
+[2023:1:56:0:49] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:0:49] Path载入成功！
+[2023:1:56:0:49] Path:D:\桌面
+[2023:1:56:1:3] 设置...
+[2023:1:56:1:19] URL载入成功！
+[2023:1:56:1:19] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:1:19] Path载入成功！
+[2023:1:56:1:19] Path:D:\桌面
+[2023:1:56:1:24] 设置...
+[2023:1:56:1:29] 设置...
+[2023:1:56:7:1] URL载入成功！
+[2023:1:56:7:1] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:7:4] Path载入成功！
+[2023:1:56:7:4] Path:D:\桌面
+[2023:1:56:7:14] 设置...
+[2023:1:56:7:16] 设置...
+[2023:1:56:35:14] URL载入成功！
+[2023:1:56:35:14] URL:
+[2023:1:56:35:14] Path载入成功！
+[2023:1:56:35:14] Path:
+[2023:1:56:36:40] 选择路径...
+[2023:1:56:36:40] 选择成功
+[2023:1:56:36:40] Path:D:\桌面
+[2023:1:56:36:56] 文件测试成功！
+[2023:1:56:37:58] URL载入成功！
+[2023:1:56:37:58] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:37:58] Path载入成功！
+[2023:1:56:37:58] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:43:24] URL载入成功！
+[2023:1:56:43:24] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:43:24] Path载入成功！
+[2023:1:56:43:24] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:43:56] URL载入成功！
+[2023:1:56:43:56] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:43:56] Path载入成功！
+[2023:1:56:43:56] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:46:8] URL载入成功！
+[2023:1:56:46:8] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:46:8] Path载入成功！
+[2023:1:56:46:8] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:47:56] URL载入成功！
+[2023:1:56:47:56] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:47:56] Path载入成功！
+[2023:1:56:47:56] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:51:3] URL载入成功！
+[2023:1:56:51:3] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:51:3] Path载入成功！
+[2023:1:56:51:3] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:54:32] URL载入成功！
+[2023:1:56:54:32] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:54:32] Path载入成功！
+[2023:1:56:54:32] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:57:34] URL载入成功！
+[2023:1:56:57:34] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:57:34] Path载入成功！
+[2023:1:56:57:34] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:57:51] URL载入成功！
+[2023:1:56:57:51] URL:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:57:51] Path载入成功！
+[2023:1:56:57:51] Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:1:56:57:53] 文件测试失败!
+[2023:1:56:0:24] URL载入成功！
+[2023:1:56:0:25] URL:Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exetrue
+[2023:1:56:0:25] Path载入成功！
+[2023:1:56:0:25] Path:Path:Path: D:\桌面URL: down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exetrue
+[2023:1:56:0:33] 文件测试失败!
+[2023:1:56:0:35] 文件测试失败!
+[2023:1:56:16:5] URL载入成功！
+[2023:1:56:16:5] URL:Path:URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true
+[2023:1:56:16:5] Path载入成功！
+[2023:1:56:16:5] Path:Path:URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true
+[2023:1:56:16:26] URL载入成功！
+[2023:1:56:16:26] URL:Path:URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true
+[2023:1:56:16:26] Path载入成功！
+[2023:1:56:16:26] Path:Path:URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true
+[2023:1:56:16:43] 文件测试失败!
+[2023:1:56:16:59] 选择路径...
+[2023:1:56:16:59] 选择成功
+[2023:1:56:16:59] Path:D:\桌面
+[2023:1:56:17:3] 文件测试成功！
+[2023:1:56:17:14] URL载入成功！
+[2023:1:56:17:14] URL:Path:D:\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true
+[2023:1:56:17:14] Path载入成功！
+[2023:1:56:17:14] Path:Path:D:\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true
+[2023:1:56:17:22] 文件测试失败!
+[2023:1:56:30:52] URL载入成功！
+[2023:1:56:30:52] URL:Path:Path:D:\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:trueURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true
+[2023:1:56:30:52] Path载入成功！
+[2023:1:56:30:52] Path:Path:Path:D:\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:trueURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true
+[2023:1:56:30:55] 文件测试失败!
+[2023:1:56:32:18] URL载入成功！
+[2023:1:56:32:18] URL:{  "Path": {    "String": "Path:Path:D:\\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:trueURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true"  }}
+[2023:1:56:32:18] Path载入成功！
+[2023:1:56:32:18] Path:{  "Path": {    "String": "Path:Path:D:\\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:trueURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true"  }}
+[2023:1:56:32:43] 文件测试失败!
+[2023:1:56:38:49] URL载入成功！
+[2023:1:56:38:49] URL:{  "Path": {    "Path": "{  \"Path\": {    \"String\": \"Path:Path:D:\\\\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:trueURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true\"  }}",    "URL": "down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe"  },  "URL": {    "Path": "{  \"Path\": {    \"String\": \"Path:Path:D:\\\\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:trueURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true\"  }}",    "URL": "down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe"  }}
+[2023:1:56:38:49] Path载入成功！
+[2023:1:56:38:49] Path:{  "Path": {    "Path": "{  \"Path\": {    \"String\": \"Path:Path:D:\\\\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:trueURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true\"  }}",    "URL": "down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe"  },  "URL": {    "Path": "{  \"Path\": {    \"String\": \"Path:Path:D:\\\\桌面URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:trueURL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exeMoon:true\"  }}",    "URL": "down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe"  }}
+[2023:1:56:38:54] 文件测试失败!
+[2023:1:56:47:9] URL载入成功！
+[2023:1:56:47:9] URL:
+[2023:1:56:47:9] Path载入成功！
+[2023:1:56:47:9] Path:
+[2023:1:56:48:25] 文件测试失败!
+[2023:1:56:51:16] 选择路径...
+[2023:1:56:51:16] 选择成功
+[2023:1:56:51:16] Path:D:\桌面
+[2023:1:56:52:2] 文件测试成功！
+[2023:1:56:52:49] URL载入成功！
+[2023:1:56:52:49] URL:
+[2023:1:56:52:49] Path载入成功！
+[2023:1:56:52:49] Path:
+[2023:1:56:54:11] 文件测试失败!
+[2023:1:56:55:20] URL载入成功！
+[2023:1:56:55:20] URL:{  "Client": {    "Path": "",    "URL": "down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe",    "Moon": true  }}
+[2023:1:56:55:20] Path载入成功！
+[2023:1:56:55:20] Path:{  "Client": {    "Path": "",    "URL": "down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe",    "Moon": true  }}
+[2023:1:56:56:7] 选择路径...
+[2023:1:56:56:7] 选择成功
+[2023:1:56:56:7] Path:D:\桌面
+[2023:1:56:56:9] 文件测试成功！
+[2023:1:56:1:41] URL载入成功！
+[2023:1:56:1:41] URL:
+[2023:1:56:1:41] Path载入成功！
+[2023:1:56:1:41] Path:
+[2023:1:56:2:35] 选择路径...
+[2023:1:56:2:35] 选择成功
+[2023:1:56:2:35] Path:D:\桌面
+[2023:1:56:2:40] 文件测试成功！
+[2023:1:56:3:16] URL载入成功！
+[2023:1:56:3:16] URL:
+[2023:1:56:3:16] Path载入成功！
+[2023:1:56:3:16] Path:
+[2023:2:63:4:41] URL载入成功！
+[2023:2:63:4:42] URL: Pressdown URL
+[2023:2:63:4:59] Path载入成功！
+[2023:2:63:4:59] Path:D:\桌面
+[2023:2:63:5:23] URL载入成功！
+[2023:2:63:5:23] URL: Pressdown URL
+[2023:2:63:5:24] Path载入成功！
+[2023:2:63:5:24] Path:D:\桌面6
+[2023:2:63:10:7] URL载入成功！
+[2023:2:63:10:7] URL: Pressdown URL
+[2023:2:63:10:13] Path载入成功！
+[2023:2:63:10:13] Path:D:\桌面6
+[2023:2:63:16:25] URL载入成功！
+[2023:2:63:16:25] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:16:29] Path载入成功！
+[2023:2:63:16:29] Path:D:\桌面
+[2023:2:63:17:18] URL载入成功！
+[2023:2:63:17:18] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:17:19] Path载入成功！
+[2023:2:63:17:19] Path:D:\桌面
+[2023:2:63:18:42] URL载入成功！
+[2023:2:63:18:42] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:18:43] Path载入成功！
+[2023:2:63:18:43] Path:D:\桌面
+[2023:2:63:23:11] URL载入成功！
+[2023:2:63:23:11] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:23:16] Path载入成功！
+[2023:2:63:23:16] Path:D:\桌面
+[2023:2:63:23:29] 文件测试成功！
+[2023:2:63:23:29] 保存成功！
+[2023:2:63:23:29] Path:D:\桌面
+[2023:2:63:23:29] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:23:29] Moon:false
+[2023:2:63:25:27] URL载入成功！
+[2023:2:63:25:27] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:25:28] Path载入成功！
+[2023:2:63:25:28] Path:D:\桌面
+[2023:2:63:26:34] URL载入成功！
+[2023:2:63:26:34] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:26:34] Path载入成功！
+[2023:2:63:26:34] Path:D:\桌面
+[2023:2:63:30:15] URL载入成功！
+[2023:2:63:30:15] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:31:7] URL读取成功！
+[2023:2:63:31:7] URLdown.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:31:7] Path读取成功！
+[2023:2:63:31:7] PathD:\桌面
+[2023:2:63:32:22] Moon 读取成功！
+[2023:2:63:32:22] Moon:false
+[2023:2:63:32:22] URL 读取成功！
+[2023:2:63:32:22] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:32:22] Path 读取成功！
+[2023:2:63:32:22] Path:D:\桌面
+[2023:2:63:36:17] Moon 读取成功！
+[2023:2:63:36:17] Moon:false
+[2023:2:63:36:17] URL 读取成功！
+[2023:2:63:36:17] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:36:17] Path 读取成功！
+[2023:2:63:36:17] Path:D:\桌面
+[2023:2:63:36:21] 保存成功！
+[2023:2:63:36:21] Path:D:\桌面
+[2023:2:63:36:21] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:36:21] Moon:false
+[2023:2:63:36:24] 文件测试成功！
+[2023:2:63:36:24] 保存成功！
+[2023:2:63:36:24] Path:D:\桌面
+[2023:2:63:36:24] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:36:24] Moon:true
+[2023:2:63:36:27] 文件测试成功！
+[2023:2:63:36:27] 保存成功！
+[2023:2:63:36:27] Path:D:\桌面
+[2023:2:63:36:27] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:36:27] Moon:false
+[2023:2:63:36:38] Moon 读取成功！
+[2023:2:63:36:38] Moon:false
+[2023:2:63:36:38] URL 读取成功！
+[2023:2:63:36:38] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:36:38] Path 读取成功！
+[2023:2:63:36:38] Path:D:\桌面
+[2023:2:63:36:49] Moon 读取成功！
+[2023:2:63:36:49] Moon:false
+[2023:2:63:36:50] URL 读取成功！
+[2023:2:63:36:50] URL:down.shudaxia.com/ShuDaXia_PC_OFFICES_Setup_v2.6.1.8.exe
+[2023:2:63:36:50] Path 读取成功！
+[2023:2:63:36:50] Path:D:\桌面666
