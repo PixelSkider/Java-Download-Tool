@@ -5,6 +5,7 @@ This is my first use GitHub so there may be some problems you also can feeback
 
 I add new function,it can Faster to download files
 I add new Ui
+I overridden the config save
 
 这是一个使用Java编写的下载工具，你可以改进或者使用 : )
 如果有BUG你可以添加我的KooK MiFea#7466 反馈或者在底下使用讨论功能
@@ -12,3 +13,4 @@ I add new Ui
 
 我增加了个新的功能，这个功能可以更快的下载文件
 我更新了ui
+我重写了配置保存
