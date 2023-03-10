@@ -4,6 +4,7 @@ package info;
 
 import client.client;
 import utils.color;
+import utils.files;
 
 import javax.swing.*;
 import java.awt.*;
@@ -13,7 +14,7 @@ import java.io.IOException;
 
 
 public class info extends JFrame {
-    private utils.info info = new utils.info();
+    private utils.files files = new files();
     utils.color color = new color();
     Boolean moon;
     Color backcColor = color.getColor(client.moon);
@@ -40,7 +41,7 @@ public class info extends JFrame {
         JLabelIP.setLocation(27, 5);
         JLabelIP.setBackground(backcColor);
         JLabelIP.setForeground(fontColor);
-        JLabelIP.setText("IP:" + info.getIp());
+        JLabelIP.setText("IP:" + files.getIp());
         JLabelIP.setFont(font);
 
         JLabel JLabelLink = new JLabel("BiliBili:b23.tv/glxK3XY");

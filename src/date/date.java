@@ -1,5 +1,7 @@
 package date;
 
+import utils.files;
+
 import java.io.*;
 import java.util.Calendar;
 
@@ -26,10 +28,25 @@ public class date {
         int S = calendar.get(Calendar.SECOND);
         String Time = "[" + Y + ":" + D +":" + G + ":" + M + ":" + S + "] ";
         String Out = Time + text + "\n";
-        String date = "src\\resource\\date.txt";
+        String date =getRunPath() + "\\resource\\date.txt";
         File f = new File(date);
+        createdate();
         FileWriter fw = new FileWriter(f,true);
         fw.write(Out);
         fw.close();
+    }
+
+    private void createdate() throws IOException {
+        File date = new File(getRunPath() + "\\resource\\date.txt");
+        File resource = new File(getRunPath() + "\\resource\\");
+        if (!resource.exists()) {
+            resource.mkdirs();
+        }
+        if (!date.exists()){
+            date.createNewFile();
+        }
+    }
+    public String getRunPath() {
+        return System.getProperty("user.dir");
     }
 }

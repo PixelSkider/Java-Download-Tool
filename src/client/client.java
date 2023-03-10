@@ -7,8 +7,9 @@ import download.single;
 import info.info;
 import settings.setting;
 import utils.color;
-import utils.file;
+import utils.files;
 import utils.image;
+import utils.play;
 
 import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
@@ -25,11 +26,12 @@ public class client extends JFrame{
     public static String inURL = " Pressdown URL";
     public static Boolean moon = true;
     single single = new single();
-    file file = new file();
+    utils.files files = new files();
     multi multi = new multi();
     date date = new date();
-    utils.color color = new color();
-    utils.image image = new image();
+    color color = new color();
+    image image = new image();
+    play play = new play();
 
     public client() throws IOException {
         this.setTitle("Hi,I am a JFrame");
@@ -117,6 +119,15 @@ public class client extends JFrame{
         JButtonSettings.setSize(300,50);
         JButtonSettings.setLocation((750 - 300) / 2,(450 - 50) / 2 + 165);
 
+        JButton JButtonExit = new JButton();
+        JButtonExit.setFont(font);
+        JButtonExit.setIcon(image.getBottom(moon));
+        JButtonExit.setBackground(color.getColor(moon));
+        JButtonExit.setSize(30,30);
+        JButtonExit.setLocation(750 - 40,12);
+        JButtonExit.setFocusPainted(false);
+        JButtonExit.setBorderPainted(false);
+
         JLabel JLabelTtile = new JLabel();
         JLabelTtile.setIcon(image.getLogo(moon));
         JLabelTtile.setSize(114,54);
@@ -127,6 +138,7 @@ public class client extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 setting setting = new setting();
                 try {
+                    play.playclick();
                     date.Print("设置...");
                 } catch (IOException ex) {
                     ex.printStackTrace();
@@ -140,6 +152,7 @@ public class client extends JFrame{
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+                    play.playclick();
                     info info = new info();
                 } catch (IOException ex) {
                     ex.printStackTrace();
@@ -158,7 +171,8 @@ public class client extends JFrame{
                 }
                 url = io + JTextFieldURL.getText();
                 try {
-                    file.testURL(url);
+                    play.playclick();
+                    files.testURL(url);
                 } catch (Exception ex) {
                     status = 404;
                     try {
@@ -214,7 +228,8 @@ public class client extends JFrame{
                 if (path != null){
                     if (path != inPath){
                         try {
-                            client.this.file.testPath(path);
+                            play.playclick();
+                            files.testPath(path);
                             url = JTextFieldURL.getText();
                             saveconfig(url,path,moon);
                         }catch (IOException ee){
@@ -260,6 +275,7 @@ public class client extends JFrame{
                     path=fileChooser.getSelectedFile().getPath();
                     JTextFieldPath.setText(path);
                     try {
+                        play.playclick();
                         date.Print("选择路径...");
                         date.Print("选择成功");
                         date.Print("Path:" + path);
@@ -270,12 +286,26 @@ public class client extends JFrame{
             }
         });
 
+        JButtonExit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                System.exit(0);
+            }
+        });
         JButtonMoon.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
+                try {
+                    play.playclick();
+                }catch (IOException ex) {
+                    ex.printStackTrace();
+                }
                 moon = !moon;
                 color.setMoon(moon);
+                JButtonExit.setForeground(color.getFontColor(moon));
+                JButtonExit.setBackground(color.getColor(moon));
+                JButtonExit.setIcon(image.getBottom(moon));
                 JTextFieldURL.setForeground(color.getFontColor(moon));
                 JTextFieldURL.setBackground(color.getColor(moon));
                 JTextFieldURL.setCaretColor(color.getCaretColor(moon));
@@ -308,25 +338,41 @@ public class client extends JFrame{
         jPanel.add(JButtonMoon);
         jPanel.add(JButtonDownload);
         jPanel.add(JButtonInfo);
+        jPanel.add(JButtonExit);
         jPanel.add(JLabelTtile);
         this.add(jPanel);
     }
 
 
     private void saveconfig(String url,String path,Boolean moon) throws IOException {
-        utils.info ii = new utils.info(url,path,moon);
+        utils.files ii = new utils.files(url,path,moon);
         ii.saveConfig();
     }
 
     private String read(String text) throws IOException {
-        utils.info info = new utils.info();
-       return info.read(text);
+        utils.files files = new utils.files();
+        String a = null;
+        if (files.read(text) == null){
+            if (text == "URL" || files.read(text) == "Path"){
+                a = "null";
+                return a;
+            }
+        }
+       return a;
     }
 
     private Boolean readAll(String text) throws IOException {
-        utils.info info = new utils.info();
-        return info.readAll(text);
+        utils.files files = new utils.files();
+        Boolean a = null;
+        if (files.readAll(text) == null){
+            a = true;
+        }else {
+            a = files.readAll(text);
+        }
+        return a;
     }
+
+
 
     private void paint(){
         this.repaint();

@@ -13,6 +13,9 @@ public class color {
         Color whitecolor = new Color(220, 220, 220);
         Color blackcolor = new Color(35,38,46);
         Color back = moon ? whitecolor : blackcolor;
+        if (moon == null){
+            return whitecolor;
+        }
         return back;
     }
 
@@ -20,6 +23,9 @@ public class color {
         Color whitecolor = new Color(255, 255, 255);
         Color blackcolor = new Color(0, 0, 0);
         Color back = moon ? blackcolor : whitecolor;
+        if (moon == null){
+            return whitecolor;
+        }
         return back;
 
     }
@@ -28,6 +34,9 @@ public class color {
         Color whitecolor = new Color(255, 255, 255);
         Color blackcolor = new Color(0, 0, 0);
         Color back = moon ? blackcolor : whitecolor;
+        if (moon == null){
+            return whitecolor;
+        }
         return back;
     }
 }
